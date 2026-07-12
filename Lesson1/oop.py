@@ -30,3 +30,16 @@ class Human:
 
     def sing(self, song):
         print(f'{self.name} is singing {song}')
+
+# Khởi tạo đối tượng (object)
+human1 = Human('Trí Thành', 12, 'Male')
+human2 = Human('Vũ Hoàng', 36, 'Undefined')
+
+# Gọi phương thức (method)
+    # Phương thức display_info() 
+human1.display_info()
+    # Phương thức __str__()
+print(human2)
+    # Phương thức sing()
+human1.sing('Happy Birthday')
+human2.sing('Baby Shark')
