@@ -44,3 +44,37 @@ print(dict2.items())
 print(dict2.keys())
 # Lấy tất cả value: values()
 print(dict2.values())
+
+# Hàm map(function, iterable):
+    # function: hàm xử lý, hàm biến đổi dữ liệu
+    # iterable: danh sách, chuỗi, dictionary,...
+
+# Ví dụ: Cho danh sách tên học sinh
+# Yêu cầu: Dùng map() để thêm tên lớp vào sau tên học sinh
+# Ví dụ: Đức Trung -> Đức Trung - PTI27
+arr = ['Thành', 'Minh', 'Tùng', 'Lam', 'Vũ', 'Hoàng', 'Đức Anh', 'Hiếu']
+
+    # Cách 1: Dùng hàm xác định
+def add_class(student, class_name = 'PTI27'):
+    return f'{student} - {class_name}'
+arr1 = map(add_class, arr)
+print(list(arr1))
+
+    # Cách 2: Dùng hàm không xác định - lambda function
+arr2 = map(lambda student: f'{student} - PTI27', arr)
+print(list(arr2))
+
+# Bài tập: Cho danh sách tên học sinh viết hoa lộn xộn
+# Yêu cầu: Dùng map() để chuẩn hóa tên học sinh (viết hoa chữ cái đầu, các chữ cái còn lại viết thường)
+name_list = ['tRi tHaNH', 'mInh TuNG', 'vU hOANg', 'dUc aNH', 'nhAT mINH', 'bAo lAM', 'dUC hieU', 'nguYen vU']
+
+    # Cách 1: Dùng hàm xác định
+def convert_name(name):
+    # title(): Viết hoa chữ cái đầu, các chữ cái còn lại viết thường
+    return name.title()
+name1 = map(convert_name, name_list)
+print(list(name1))
+
+    # Cách 2: Dùng hàm không xác định - lambda function
+name2 = map(lambda name: name.title(), name_list)
+print(list(name2))
