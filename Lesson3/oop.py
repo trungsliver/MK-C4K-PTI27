@@ -35,4 +35,17 @@ class UserDatabase:
         # Lưu vào thuộc tính users_list
         self.users_list = new_users
 
-        
+    # Chuyển đổi từ object sang dictionary
+    def object_to_dict(self):
+        json_data = list()
+        # Duyệt danh sách object users_list
+        for user_data in self.users_list:
+            # user_data.__dict__: chuyển dạng object sang dictionary
+            json_data.append(user_data.__dict__)
+        return json_data
+
+    # Hiển thị tất cả data trong users_list
+    def show_all(self):
+        for user in self.users_list:
+            # display_info(): phương thức của class User
+            user.display_info()

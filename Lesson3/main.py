@@ -12,3 +12,14 @@ print('Độ dài users_list:', len(db.users_list))
 # Test chuyển đổi từ dictionary sang object
 db.dict_to_object()
 print('users_list sau chuyển đổi:', len(db.users_list))
+
+# Ví dụ users_list trong database:
+user_list_example = [
+    oop.User('trithanh', 'thanhscp@gmail.com', '123456'),
+    oop.User('hoanganh', 'heosua@gmail.com', '123456'),
+    oop.User('vuhoang', 'vuhoangiuem@gmail.com', '123456'),
+]
+
+# Test phương thức show_all()
+print('Hiển thị tất cả data trong users_list:')
+db.show_all()
