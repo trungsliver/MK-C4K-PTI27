@@ -49,3 +49,12 @@ class UserDatabase:
         for user in self.users_list:
             # display_info(): phương thức của class User
             user.display_info()
+
+    # Phương thức tìm kiếm user theo username
+    def find_user_by_username(self, username:str):
+        found_user = []
+        for user in self.users_list:
+            # Nếu username truyền vào là substring của user.username 
+            if username in user.username:
+                found_user.append(user)
+        return found_user

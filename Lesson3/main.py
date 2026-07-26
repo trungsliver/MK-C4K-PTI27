@@ -23,3 +23,9 @@ user_list_example = [
 # Test phương thức show_all()
 print('Hiển thị tất cả data trong users_list:')
 db.show_all()
+
+# Test phương thức find_user_by_username()
+result = db.find_user_by_username('duc')
+print('Kết quả tìm kiếm: ')
+for user in result:
+    user.display_info()
