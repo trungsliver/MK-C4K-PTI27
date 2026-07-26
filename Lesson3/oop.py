@@ -21,4 +21,18 @@ class UserDatabase:
         self.users_list = list()
         # Danh sách dạng dictionary
         self.users_dict = data_io.load_json_data(file_path)
+
+    # Chuyển đổi từ dictionary sang object
+    def dict_to_object(self):
+        new_users = []
+        # Duyệt danh sách users_dict (đã có data)
+        for user_data in self.users_dict:
+            # Lấy value trong dictionary gán cho object User
+            user = User(user_data['username'], 
+                        user_data['email'], 
+                        user_data['password'])
+            new_users.append(user)
+        # Lưu vào thuộc tính users_list
+        self.users_list = new_users
+
         
