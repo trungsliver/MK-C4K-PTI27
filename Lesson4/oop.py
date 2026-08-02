@@ -65,3 +65,64 @@ class PlayerDatabase:
         for player in self.players_list:
             # display_info(): phương thức của class User
             player.show_info()
+
+    # Tìm object theo tên
+    def find_player_by_name(self, name):
+        for player in self.players_list:
+            if name in player.name:     # Tìm thấy
+                return player
+        return None    # Không tìm thấy
+
+    # Thêm 1 player mới
+    def add_player(self, player_dict):
+        # Tạo 1 object mới
+            # id sẽ là số index tiếp theo
+        player_dict["id"] = len(self.players_list) + 1
+        new_player = Player(id = player_dict["id"],
+                            name = player_dict['name'],
+                            dob = player_dict['dob'],
+                            region = player_dict['region'],
+                            club = player_dict['club'],
+                            rating = player_dict['rating'],
+                            worth = player_dict['worth'])
+        # Thêm vào danh sách object
+        self.players_list.append(new_player)
+        # Thêm vào danh sách dictionary
+        self.players_dict.append(new_player.__dict__)
+        # Ghi dữ liệu vào file
+        data_io.write_json_data(self.file_path, self.players_dict)
+
+    # Tìm player và sửa thông tin
+    def edit_player(self, edit_name, new_data):
+        # Tìm đối tượng
+        matched = self.find_player_by_name(edit_name)
+        # sửa đối tượng nếu tìm thấy:
+        if matched:
+            # Sửa trong danh sách object
+            matched.update(new_data)
+            # Sửa trong danh sách dictionary
+            self.object_to_dict()
+            # Lưu dữ liệu vào file
+            data_io.write_json_data(self.file_path, self.players_dict)
+
+    # Tìm player theo tên và xóa thông tin
+    def delete_player(self, delete_name):
+        # Tìm đối tượng
+        matched = self.find_player_by_name(delete_name)
+        # Xóa đối tượng
+        if matched:
+            # Xóa trong danh sách object
+            self.players_list.remove(matched)
+            # Xóa trong danh sách dictionary
+            self.players_dict.remove(matched.__dict__)
+            # Lưu dữ liệu vào file
+            data_io.write_json_data(self.file_path, self.players_dict)
+
+    # Tìm danh danh sách player mà tên có chứa chuỗi tìm kiếm
+    def search_player(self, search_name):
+        # Danh sách lưu kết quả (dạng object)
+        matched_players = []
+        for player in self.players_list:
+            if search_name in player.name:
+                matched_players.append(player)
+        return matched_players
