@@ -62,6 +62,6 @@ class PlayerDatabase:
 
     # Hiển thị toàn bộ thông tin
     def show_all(self):
-        for user in self.users_list:
+        for player in self.players_list:
             # display_info(): phương thức của class User
-            user.display_info()
+            player.show_info()
