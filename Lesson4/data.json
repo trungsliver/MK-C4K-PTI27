@@ -1,0 +1,191 @@
+[
+    {
+        "id": 1,
+        "name": "Cristiano Ronaldo",
+        "dob": "05/02/1985",
+        "region": "Portugal",
+        "club": "Al Nassr",
+        "rating": 9.6,
+        "worth": 40000000.0
+    },
+    {
+        "id": 3,
+        "name": "Lionel Messi",
+        "dob": "24/06/1987",
+        "region": "Argentina",
+        "club": "Inter Miami",
+        "rating": 9.8,
+        "worth": 18000000.0
+    },
+    {
+        "id": 4,
+        "name": "Kylian Mbappe",
+        "dob": "20/12/1998",
+        "region": "France",
+        "club": "Real Madrid",
+        "rating": 9.7,
+        "worth": 180000000.0
+    },
+    {
+        "id": 5,
+        "name": "Erling Haaland",
+        "dob": "21/07/2000",
+        "region": "Norway",
+        "club": "Manchester City",
+        "rating": 9.6,
+        "worth": 180000000.0
+    },
+    {
+        "id": 6,
+        "name": "Vinicius Junior",
+        "dob": "12/07/2000",
+        "region": "Brazil",
+        "club": "Real Madrid",
+        "rating": 9.5,
+        "worth": 170000000.0
+    },
+    {
+        "id": 7,
+        "name": "Jude Bellingham",
+        "dob": "29/06/2003",
+        "region": "England",
+        "club": "Real Madrid",
+        "rating": 9.5,
+        "worth": 180000000.0
+    },
+    {
+        "id": 8,
+        "name": "Harry Kane",
+        "dob": "28/07/1993",
+        "region": "England",
+        "club": "Bayern Munich",
+        "rating": 9.3,
+        "worth": 90000000.0
+    },
+    {
+        "id": 9,
+        "name": "Kevin De Bruyne",
+        "dob": "28/06/1991",
+        "region": "Belgium",
+        "club": "Napoli",
+        "rating": 9.4,
+        "worth": 30000000.0
+    },
+    {
+        "id": 10,
+        "name": "Mohamed Salah",
+        "dob": "15/06/1992",
+        "region": "Egypt",
+        "club": "Liverpool",
+        "rating": 9.4,
+        "worth": 55000000.0
+    },
+    {
+        "id": 11,
+        "name": "Robert Lewandowski",
+        "dob": "21/08/1988",
+        "region": "Poland",
+        "club": "Barcelona",
+        "rating": 9.2,
+        "worth": 15000000.0
+    },
+    {
+        "id": 12,
+        "name": "Lamine Yamal",
+        "dob": "13/07/2007",
+        "region": "Spain",
+        "club": "Barcelona",
+        "rating": 9.5,
+        "worth": 200000000.0
+    },
+    {
+        "id": 13,
+        "name": "Pedri",
+        "dob": "25/11/2002",
+        "region": "Spain",
+        "club": "Barcelona",
+        "rating": 9.2,
+        "worth": 140000000.0
+    },
+    {
+        "id": 14,
+        "name": "Bukayo Saka",
+        "dob": "05/09/2001",
+        "region": "England",
+        "club": "Arsenal",
+        "rating": 9.3,
+        "worth": 150000000.0
+    },
+    {
+        "id": 15,
+        "name": "Cole Palmer",
+        "dob": "06/05/2002",
+        "region": "England",
+        "club": "Chelsea",
+        "rating": 9.2,
+        "worth": 130000000.0
+    },
+    {
+        "id": 16,
+        "name": "Phil Foden",
+        "dob": "28/05/2000",
+        "region": "England",
+        "club": "Manchester City",
+        "rating": 9.3,
+        "worth": 140000000.0
+    },
+    {
+        "id": 17,
+        "name": "Bruno Fernandes",
+        "dob": "08/09/1994",
+        "region": "Portugal",
+        "club": "Al Hilal",
+        "rating": 9.0,
+        "worth": 50000000.0
+    },
+    {
+        "id": 18,
+        "name": "Rodri",
+        "dob": "22/06/1996",
+        "region": "Spain",
+        "club": "Manchester City",
+        "rating": 9.4,
+        "worth": 110000000.0
+    },
+    {
+        "id": 19,
+        "name": "Lautaro Martinez",
+        "dob": "22/08/1997",
+        "region": "Argentina",
+        "club": "Inter Milan",
+        "rating": 9.2,
+        "worth": 95000000.0
+    },
+    {
+        "id": 20,
+        "name": "Florian Wirtz",
+        "dob": "03/05/2003",
+        "region": "Germany",
+        "club": "Liverpool",
+        "rating": 9.5,
+        "worth": 160000000.0
+    },
+    {
+        "id": 21,
+        "name": "Jamal Musiala",
+        "dob": "26/02/2003",
+        "region": "Germany",
+        "club": "Bayern Munich",
+        "rating": 9.4,
+        "worth": 140000000.0
+    },
+    {
+        "id": 22,
+        "name": "Khvicha Kvaratskhelia",
+        "dob": "12/02/2001",
+        "region": "Georgia",
+        "club": "Paris Saint-Germain",
+        "rating": 9.2,
+        "worth": 90000000.0
+    }
+]
