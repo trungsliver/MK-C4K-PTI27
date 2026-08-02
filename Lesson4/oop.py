@@ -55,9 +55,9 @@ class PlayerDatabase:
     def object_to_dict(self):
         json_data = list()
         # Duyệt danh sách object users_list
-        for user_data in self.users_list:
+        for player_data in self.players_list:
             # user_data.__dict__: chuyển dạng object sang dictionary
-            json_data.append(user_data.__dict__)
+            json_data.append(player_data.__dict__)
         return json_data
 
     # Hiển thị toàn bộ thông tin
@@ -100,6 +100,7 @@ class PlayerDatabase:
         if matched:
             # Sửa trong danh sách object
             matched.update(new_data)
+            self.players_list[self.players_list.index(matched)] = matched
             # Sửa trong danh sách dictionary
             self.object_to_dict()
             # Lưu dữ liệu vào file
