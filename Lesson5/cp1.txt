@@ -5,3 +5,13 @@ Các file có trong folder:
 - tracnghiem.txt (ghi các đáp án trắc nghiệm vào file này)
 - oop.py (Khai báo class)
 - main.py (viết test)
+
+Kết quả CP1:
+Vũ Hoàng: 8 9 = 8.5
+Đức Anh: 7 9 = 8
+Đức Hiếu: 8 8 = 8
+Trí Thành: 7 8 = 7.5
+Minh Tùng: 8 9 = 8.5
+Nhật Minh: 6 8 = 7
+Hoàng Anh: 6 8 = 7
+Nguyên Vũ: 8 10 = 9
