@@ -17,6 +17,7 @@ class MainWindow(QMainWindow):
         self.btn_add.clicked.connect(self.add_item)
         self.btn_edit.clicked.connect(self.edit_item)
         self.btn_delete.clicked.connect(self.delete_item)
+        self.btn_search.clicked.connect(self.search_item)
 
     def add_item(self):
         # Lấy text ở lineEdit
@@ -69,7 +70,24 @@ class MainWindow(QMainWindow):
         self.listWidget.addItems(arr)
         # Xóa text ở lineEdit
         self.lineEdit.setText("")
-        
+
+    def search_item(self):
+        insert_txt = self.lineEdit.text().strip()
+        check = False
+        check_list = []
+        for item in arr:
+            if insert_txt in item:
+                check = True
+                check_list.append(item)
+        # Xóa hết các phần tử ở trên widget
+        self.listWidget.clear()
+        # add lại cả danh sách vào list widget
+        if check == True:
+            msg_box('Thành công', f'Có {len(check_list)} kết quả!')
+        else:
+            check_list.append('item not found')
+        self.listWidget.addItems(check_list)
+
 def msg_box(title, content):
     msg = QtWidgets.QMessageBox()
     msg.setStyleSheet("QLabel{min-width: 200px;}"
