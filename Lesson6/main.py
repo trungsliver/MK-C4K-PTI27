@@ -16,6 +16,7 @@ class MainWindow(QMainWindow):
         # Kết nối sự kiện click vào nút với hàm xử lý
         self.btn_add.clicked.connect(self.add_item)
         self.btn_edit.clicked.connect(self.edit_item)
+        self.btn_delete.clicked.connect(self.delete_item)
 
     def add_item(self):
         # Lấy text ở lineEdit
@@ -54,6 +55,21 @@ class MainWindow(QMainWindow):
         # Xóa text ở lineEdit
         self.lineEdit.setText("")
 
+    def delete_item(self):
+        # Lấy index dòng đang chọn trên list widget
+        cur = self.listWidget.currentRow()
+        # Kiểm tra nếu không có dòng nào được chọn thì thông báo lỗi
+        if cur < 0:
+            msg_box("Lỗi", "Vui lòng chọn dòng cần xóa!")
+            return
+        # Xóa phần tử trong danh sách
+        arr.pop(cur)
+        # Cập nhật lại list widget
+        self.listWidget.clear()
+        self.listWidget.addItems(arr)
+        # Xóa text ở lineEdit
+        self.lineEdit.setText("")
+        
 def msg_box(title, content):
     msg = QtWidgets.QMessageBox()
     msg.setStyleSheet("QLabel{min-width: 200px;}"
