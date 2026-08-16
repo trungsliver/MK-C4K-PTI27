@@ -76,7 +76,7 @@ class MainWindow(QMainWindow):
         check = False
         check_list = []
         for item in arr:
-            if insert_txt in item:
+            if insert_txt.lower() in item.lower():
                 check = True
                 check_list.append(item)
         # Xóa hết các phần tử ở trên widget
