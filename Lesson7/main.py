@@ -2,15 +2,23 @@ import sys
 from PyQt6.QtWidgets import QMainWindow, QApplication
 from PyQt6 import QtCore, QtWidgets
 from PyQt6 import uic
-import oop
+import oop 
 
 # xử lý
 app = QApplication(sys.argv)
+
+# Khởi tạo database
+db = oop.UserDatabase('data.json')
+db.convert_to_object()
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('list.ui', self)
+        # Lấy dữ liệu từ database
+        users = db.get_all_users()
+        # Hiển thị user lên list widget
+        self.listWidget.addItems(users)
 
 def msg_box(title, content):
     msg = QtWidgets.QMessageBox()
