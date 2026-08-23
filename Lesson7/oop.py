@@ -44,3 +44,32 @@ class UserDatabase:
         for user in self.users_list:
             users.append(f"Email: {user.email}. Password: {user.password}")
         return users
+
+    # Thêm user mới (đăng ký)
+    def add_user(self, email, password):
+        # Tạo user (cả object và dictionary)
+        obj_user = User(email, password)
+        dict_user = {"email": email, "password": password}
+        # Thêm user vào danh sách
+        self.users_list.append(obj_user)
+        self.users_dict.append(dict_user)
+        # Ghi vào file json
+        data_io.write_json_data(self.file_path, self.users_dict)
+
+    # Tìm object bằng email
+    def find_user_by_email(self, email):
+        for user in self.users_dict:
+            # Tìm thấy
+            if email.lower() in user["email"].lower():
+                return True
+        # Không tìm thấy
+        return False
+    
+    # Check login
+    def check_login(self, email, password):
+        for user in self.users_dict:
+            # Tìm thấy
+            if user["email"].lower() == email.lower() and user["password"] == password:
+                return True
+        # Không tìm thấy
+        return False
