@@ -1,0 +1,51 @@
+Hãy đưa ra mã nguồn của ứng dựng Calculator
+
+1. Mô tả:
+- có 3 file giao diện (đuôi .ui): signup.ui, login.ui, calculator.ui
+- Có 1 file xử lý tất cả chức năng: main.py
+
+2. Chức năng:
+- Có thanh navbar chung cho tất cả các trang: có 3 nút chuyển trang Calculator - Login - Signup
+- Trang Signup:
+	+ Các thông tin: 
+		. username: ít nhất 3 ký tự
+		. email: đúng định dạng (dùng regex)
+		. gender: comboBox (male, female, others)
+		. password: ít nhất 6 ký tự, có ký tự viết hoa, viết thường, số
+		. confirm password: giống password bên trên
+		. button signup: 
+	+ Khi ấn button signup, kiểm tra nhập đầy đủ tất cả thông tin, đúng theo yêu cầu bên trên
+	+ Nếu đăng ký không thành công, hiển thị hộp thoại thông báo lỗi chi tiết lên trên giao diện
+	+ Nếu đăng ký thành công, lưu thông tin người dùng vào file users.json, hiển thị thông báo thành công và chuyển sang trang login
+- Trang Login:
+	+ Các thông tin:
+		. email: đúng định dạng (dùng regex)
+		. password: ít nhất 6 ký tự, có ký tự viết hoa, viết thường, số
+		. button login
+	+ Khi ấn button login:
+		. kiểm tra đầy đủ thông tin theo yêu cầu bên trên
+		. Kiểm tra xem thông tin đã nhập có trùng với thông tin trong file users.json không
+	+ Nếu đăng nhập không thành công: hiển thị hộp thoại thông báo lỗi chi tiết
+	+ Nếu đăng nhập thành công, hiển thị thông báo và chuyển sang trang calculator
+- Trang Calculator:
+	+ Các thành phần
+		. lineEdit (no Edit): hiển thị phép tính
+		. lineEdit (no Edit): hiển thị kết quả phép tính
+		. các button của calculator tương tự các phím ấn trên máy tính của iphone
+	+ Chức năng:
+		. Tính toán cơ bản: cộng trừ nhân chia
+		. Ans: lưu kết quả gần nhất
+		. Ac: xóa text ở các lineEdit
+		. Del: xóa ký tự cuối cùng ở lineEdit hiển thị phép tính
+		. Kiểm tra kỹ các trường hợp lỗi (cú pháp, chia cho 0,....)
+		. Khi ấn dấu =: hiển thị kết quả ở lineEdit kết quả
+	
+3. Yêu cầu:
+- Sử dụng ngôn ngữ Python để xử lý chức năng (file main.py)
+- Sử dụng PyQt6 để thiết kế giao diện
+- Gửi tách riêng file .ui và file .py
+- Thiết kế giao diện đẹp mắt, có đầy đủ các hiệu ứng hover, pressed
+- Giao diện máy tính giống với máy tính ở apple trên iphone
+- Đưa ra mã nguồn các file .ui dưới dạng xml
+
+

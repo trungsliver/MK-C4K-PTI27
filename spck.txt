@@ -1,0 +1,19 @@
+Thứ tự thuyết trình SPCK PTI27
+
+1. Nhật Minh: Máy tính (lưu lịch sử tính toán) & Chuyển đổi đơn vị (tiền tệ, nhiệt độ, độ dài, cân nặng)
+
+2. Nguyên Vũ: Quản lý chi tiêu cá nhân 
+
+3. Đức Hiếu: Ứng dụng đọc truyện
+
+4. Vũ Hoàng: Quiz App (tối thiểu 4 chủ đề)
+
+5. Minh Tùng: Quản lý danh bạ
+
+6. Đức Anh: Quản lý sách
+
+7. Bảo Lam: Quản lý ghi chú / nhắc hẹn
+
+8. Hoàng Anh: Quản lý học sinh
+
+9. Trí Thành: Kiểm tra tốc độ đánh máy
