@@ -1,0 +1,17 @@
+Quy tắc đặt tên folder cho CP1: [TenLop]_[HoTen]_CP2
+Ví dụ: PTI27_BuiDucTrung_CP2
+
+Các file có trong folder:
+- tracnghiem.txt
+- main.py
+- main.ui
+
+Link đề bài: shorturl.at/ozUcP
+
+Hạn nộp: 15h00      buiductrung.cva@gmail.com
+
+Trừ điểm
+Minh Tùng: 1
+Hoàng Anh: 2
+Vũ Hoàng: 2
+Đức Anh: 1
