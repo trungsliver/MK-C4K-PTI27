@@ -3,8 +3,8 @@ Thứ tự thuyết trình SPCK PTI27
 1. Nhật Minh: Máy tính (lưu lịch sử tính toán) & Chuyển đổi đơn vị (tiền tệ, nhiệt độ, độ dài, cân nặng)
 https://www.canva.com/design/DAHWX50kgyM/39rKBICtWcFmXZwQ7Q_ZXA/edit
 
-2. Đức Anh: Quản lý sách
-https://www.canva.com/design/DAHVFbvJRwk/ikwf_BlT0_dRqV0T2lk2ZA/edit
+2. Trí Thành: Kiểm tra tốc độ đánh máy
+https://www.canva.com/design/DAHWX-IV8_8/IOrKu-KOQX_CjpB7kDVHsw/edit
 
 3. Đức Hiếu: Ứng dụng đọc truyện
 https://www.canva.com/design/DAHWX6_t8uU/w-_1srI0maO82S-Do_bdqw/edit
@@ -24,5 +24,6 @@ https://www.canva.com/design/DAHWXwHibWo/na4d7AQ4CLyT5bLe8Z0Amw/edit
 8. Hoàng Anh: Quản lý học sinh
 https://www.canva.com/design/DAHWX0x15RA/cBZrNJ1b-ramfP7R2UcPcg/edit
 
-9. Trí Thành: Kiểm tra tốc độ đánh máy
-https://www.canva.com/design/DAHWX-IV8_8/IOrKu-KOQX_CjpB7kDVHsw/edit
+9. Đức Anh: Quản lý sách
+https://www.canva.com/design/DAHVFbvJRwk/ikwf_BlT0_dRqV0T2lk2ZA/edit
+
